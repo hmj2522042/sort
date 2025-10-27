@@ -4,4 +4,6 @@ D:\KameiYuta\GitHub\ソート\ソート\Main.cpp(48,17): warning C4244:         
 D:\KameiYuta\GitHub\ソート\ソート\Main.cpp(48,17): warning C4244:         [
 D:\KameiYuta\GitHub\ソート\ソート\Main.cpp(48,17): warning C4244:             _Rep=__int64
 D:\KameiYuta\GitHub\ソート\ソート\Main.cpp(48,17): warning C4244:         ]
+  RadixSort.cpp
+  コードを生成中...
   ソート.vcxproj -> D:\KameiYuta\GitHub\ソート\x64\Debug\ソート.exe

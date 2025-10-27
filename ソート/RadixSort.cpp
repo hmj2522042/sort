@@ -20,35 +20,10 @@ void RadixSort::Exec(int* array, int size)
 		if (digits > digitsMax) digitsMax = digits;
 	}
 
-	//　一桁目
-
-	// 要素を各桁に割り振る
-	for (int i = 0; i < size; i++)
+	// ソート
+	for (int i = 0; i < digitsMax; i++)
 	{
-		digitsPool[array[i] % 10].push_back(array[i]);
-	}
-
-	count = 0;
-
-	// 元の配列に割り振る
-	for (int i = 0; i < 10; i++)
-	{
-		for (int j = 0; j < digitsPool[i].size(); j++)
-		{
-			array[count] = digitsPool[i][j];
-			count++;
-		}
-	}
-
-	// 要素を削除
-	for (int i = 0; i < digitsPool.size(); i++) {
-		digitsPool[i].clear();
-	}
-
-	// 二桁目以降
-
-	for (int i = 1; i < digitsMax; i++)
-	{
+		// i+1桁目を比較
 		for (int j = 0; j < size; j++)
 		{
 			int digit = (array[j] / static_cast<int>(std::pow(10, i))) % 10;
