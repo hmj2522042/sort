@@ -4,8 +4,8 @@
 #include "BubbleSort.h"
 #include "InsertionSort.h"
 #include "SelectionSort.h"
-//#include "QuickSort.h"
-//#include "RadixSort.h"
+#include "QuickSort.h"	// Chatgptì(Ä‹Aˆ—)
+#include "RadixSort.h"
 
 using namespace std;
 
@@ -20,10 +20,12 @@ void ShowArray(int* array, int size)
 
 int main()
 {
-	constexpr int Size = 5;
-	//Sort* sort = new BubbleSort();
+	constexpr int Size = 20;
+	Sort* sort = new BubbleSort();
 	//Sort* sort = new InsertionSort();
-	Sort* sort = new SelectionSort();
+	//Sort* sort = new SelectionSort();
+	//Sort* sort = new QuickSort();	// Chatgptì(Ä‹Aˆ—–³—‚¾‚Á‚½‚½‚ß)
+	//Sort* sort = new RadixSort();
 
 	// ”z—ñì¬
 	vector<int> array(Size);

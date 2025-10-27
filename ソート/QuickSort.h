@@ -7,6 +7,10 @@ class QuickSort : public Sort
 public:
 	virtual void Exec(int* array, int size) override;
 
+
 private:
-	int small, big;
+	void Loop(int* array, int left, int right);
+
+private:
+	int rightSmall, leftBig, pivot,maxRange,minRange;
 };

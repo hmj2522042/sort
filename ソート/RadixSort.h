@@ -8,5 +8,5 @@ public:
 	virtual void Exec(int* array, int size) override;
 
 private:
-	int small, big;
+	int small, big, digitsMax;
 };

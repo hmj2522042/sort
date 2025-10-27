@@ -6,7 +6,7 @@ void InsertionSort::Exec(int* array, int size)
 	{
 		for (int j = i; j > 0; j--)
 		{
-			if (j == 0) return;
+			if (j == 0) break;
 			if (array[j] < array[j - 1])
 			{
 				small = array[j];
